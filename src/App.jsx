@@ -4,10 +4,18 @@ import { switchThemeButton } from "./components";
 
 export default function App() {
   return (
-    <ThemeProvider>
-      <main>
-        <switchThemeButton />
-      </main>
-    </ThemeProvider>
+    <div className="App">
+      "In App.jsx"
+      <switchThemeButton />
+    </div>
   );
+
+  // return (
+  //   <ThemeProvider>
+  //     <main>
+  //       <switchThemeButton />
+  //       'In App.jsx'
+  //     </main>
+  //   </ThemeProvider>
+  // );
 }
