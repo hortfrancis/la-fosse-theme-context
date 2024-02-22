@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { ThemeProvider } from "./contexts";
+
 import { Button } from "./components";
 import { useTheme } from "./contexts";
 
@@ -9,25 +9,25 @@ const string = "duck";
 function App() {
   const { theme, toggleTheme } = useTheme();
 
-  // const theme = "blob";
-  const blob = "yes";
-  console.log(blob);
-
-  // const toggle = document.getElementById("toggle");
-
-  // toggle.addEventListener("change", (e) => {
-  //   document.body.classList.toggle("dark", e.target.checked);
-  // });
+  console.log(theme)
 
   return (
-    <React.StrictMode>
-      <ThemeProvider>
-        <div className={`${theme} ${blob}`}>
+
+
+        <div className={`App theme--${theme}`}>
+        {/* <div className={`App theme--dark`}> */}
           theme: {theme}
+
+          <div className="card">
+            <h2>My heading</h2>
+            <p>My parrot-graph</p>
+          </div>
+
+
           <Button />
         </div>
-      </ThemeProvider>
-    </React.StrictMode>
+
+
   );
 }
 

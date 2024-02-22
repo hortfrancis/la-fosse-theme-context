@@ -2,7 +2,47 @@
   box-sizing: border-box;
 }
 
-div {
+body {
+  margin: 0;
+}
+
+.App {
+  min-height: 100vh;
+  /* background-color: darkblue; */
+
+  &.theme--dark {
+    background-color: darkblue;
+
+    .card {
+      background-color: darkgrey;
+
+      h2 {
+        color: darkgoldenrod;
+      }
+
+      p {
+        color: darkred;
+      }
+
+    }
+  }
+
+  .card {
+    background-color: grey;
+
+    h2 {
+      color: gold;
+    }
+
+    p {
+      color: goldenrod;
+    }
+  }
+}
+
+
+
+/* div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +55,7 @@ div {
   padding: 5rem;
 
   transition: background 0.3s linear, color 0.3s linear;
-}
+} */
 
 div.dark {
   background-color: #1f1f1f;
