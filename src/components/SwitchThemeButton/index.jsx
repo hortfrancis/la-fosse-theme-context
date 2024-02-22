@@ -5,6 +5,7 @@ export default function Button() {
 
   return (
     <div className={`${theme}`}>
+      theme: {theme}
       <button onClick={toggleTheme}>Toggle theme</button>
     </div>
   );
