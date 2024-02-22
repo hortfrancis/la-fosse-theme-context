@@ -1,21 +1,16 @@
+import React from "react";
 import "./App.css";
 import { ThemeProvider } from "./contexts";
-import { switchThemeButton } from "./components";
+import { Button } from "./components";
 
-export default function App() {
+function App() {
   return (
-    <div className="App">
-      "In App.jsx"
-      <switchThemeButton />
-    </div>
+    <React.StrictMode>
+      <ThemeProvider>
+        <Button />
+      </ThemeProvider>
+    </React.StrictMode>
   );
-
-  // return (
-  //   <ThemeProvider>
-  //     <main>
-  //       <switchThemeButton />
-  //       'In App.jsx'
-  //     </main>
-  //   </ThemeProvider>
-  // );
 }
+
+export default App;

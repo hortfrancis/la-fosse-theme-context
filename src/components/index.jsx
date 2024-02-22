@@ -1,1 +1,1 @@
-export { default as switchThemeButton } from "./switchThemeButton";
+export { default as Button } from "./button/SwitchButton";

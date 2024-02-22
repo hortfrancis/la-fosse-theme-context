@@ -1,28 +1,11 @@
-import React from "react";
-// import { ThemeProvider, useTheme } from "./contexts";
-// import "./index.css";
+import { useTheme } from "../../contexts/index";
 
-export default function switchThemeButton() {
-  return <button type="button">Switch Theme</button>;
+export default function Button() {
+  const { theme, toggleTheme } = useTheme();
+
+  return (
+    <div className={`${theme}`}>
+      <button onClick={toggleTheme}>Toggle theme</button>
+    </div>
+  );
 }
-
-// export default function switchThemeButton() {
-//   // const { theme, toggleTheme } = useTheme();
-
-//   // const handleClick = () => {
-//   //   console.log("button clicked!");
-//   // };
-
-//   return <button>Toggle theme</button>;
-//   // return <button onClick={handlClick}>Toggle theme</button>;
-
-//   // return (
-//   //   // <ThemeProvider>
-//   //     // <div className={`App ${theme}`}>
-//   //       // <button onClick={toggleTheme}>Toggle theme</button>
-//   //   <button onClick={handlClick}>Toggle theme</button>
-
-//   //     // </div>
-//   //   {/* </ThemeProvider> */}
-//   // );
-// }
