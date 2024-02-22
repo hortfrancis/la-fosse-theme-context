@@ -7,6 +7,10 @@ function App() {
   return (
     <React.StrictMode>
       <ThemeProvider>
+        <div className="card">
+          <h2 className="card-heading">Biscuits Today</h2>
+          <p>Your Daily Biscuits News!</p>
+        </div>
         <Button />
       </ThemeProvider>
     </React.StrictMode>
